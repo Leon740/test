@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-cali-48 {
+    @apply font-calistoga-regular text-48;
+  }
+  .text-cali-16 {
+    @apply font-calistoga-regular text-16;
+  }
+  .text-ss3-20-regular {
+    @apply text-20 font-ss3-regular;
+  }
+  .text-ss3-20-bold {
+    @apply text-20 font-ss3-bold;
+  }
+  .text-ss3-16-regular {
+    @apply text-16 font-ss3-regular;
+  }
+
+  .section-gap {
+    @apply py-64 xl:py-128;
+  }
+  .section-inner-gap {
+    @apply flex flex-col gap-64;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  // .progressive {
+  //   @apply absolute -z-10 top-0 left-0 w-full h-full;
+
+  //   img {
+  //     @apply select-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover object-left;
+  //   }
+  // }
+}

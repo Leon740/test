@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font_sourcesans3_regular;
+  font-size: $size_16;
+  color: $black;
+  background: $gray-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  color: inherit;
+  @apply transition-all;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p > a {
+  color: $sky-500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
+}
+
+input {
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
